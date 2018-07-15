@@ -6,15 +6,12 @@ describing the relative positions of each pixel within every instance as shown i
 pre‐trained Mask‐RCNN feature extractor (P2 as in Matterport version of MaskRCNN) for better 
 performance. 
 
-image:: https://github.com/jacobkie/2018DSB/blob/master/imgs/0.png
-  :scale: 50 %
+https://github.com/jacobkie/2018DSB/blob/master/imgs/0.png
 
-image:: https://github.com/jacobkie/2018DSB/blob/master/imgs/1.png
-  :scale: 50 %
-
-image:: https://github.com/jacobkie/2018DSB/blob/master/imgs/1.png
-  :scale: 50 %
-
+The relative position masks are shown as below:
+https://github.com/jacobkie/2018DSB/blob/master/imgs/1.png
+https://github.com/jacobkie/2018DSB/blob/master/imgs/1.png
+ 
 Codes in utils.py, parallel_model.py, params.py, visualize.py, model_rcnn_weight.py 
 are partly adapted from Matterport Mask_RCNN 
 (https://github.com/matterport/Mask_RCNN) which is under MIT license. I also used its pre‐
@@ -24,7 +21,7 @@ Four sources of data were used:
 1. The Revised Train set(https://github.com/lopuhin/kaggle‐dsbowl‐2018‐dataset‐fixes) 
 2. 2009 ISBI (http://murphylab.web.cmu.edu/data/2009_ISBI_Nuclei.html) 
 3. Weebly (https://nucleisegmentationbenchmark.weebly.com/) 
-4. TNBC (https://github.com/lopuhin/kaggle‐dsbowl‐2018‐dataset‐fixes)  
+4. TNBC (https://zenodo.org/record/1175282#.Ws2n_vkdhfA)  
  
 Some masks of the 2009ISBI data set are manually modified. 
 
@@ -38,9 +35,3 @@ To train from scratch
 8. correct directory address of weight_dir and run submission.py to combine instance masks from four zooms and mask submission file. 
 
 Or you can use my pretrained weight in the cache folder to make predictions directly. 
-
-
-
-
-
-
